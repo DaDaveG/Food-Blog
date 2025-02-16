@@ -1,0 +1,6 @@
+img {
+    width: 100%;
+    height: auto;  /* Maintain aspect ratio */
+    object-fit: cover;  /* Ensure images are cropped uniformly if needed */
+  }
+  

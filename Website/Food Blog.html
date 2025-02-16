@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sinasutra's Kitchen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+
+/* Ensure all images are the same size */
+img {
+  width: 100%;
+  height: 300px; /* Fixed height */
+  object-fit: cover; /* Crop and maintain the aspect ratio */
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">Mail</div>
+    <div class="w3-center w3-padding-16">Welcome, Customer.</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+<!-- First Photo Grid-->
+<div class="w3-row-padding w3-padding-16 w3-center" id="food">
+  <div class="w3-quarter">
+    <img src="img/Olio1.jpg" alt="Spaghetti Aglio e Olio">
+    <h3>Spaghetti Aglio e Olio</h3>
+    <p>A simple and delicious pasta dish made with garlic, olive oil, and a sprinkle of chili flakes for that perfect kick.</p>
+  </div>
+  <div class="w3-quarter">
+    <img src="img/Mignon1.jpg" alt="Filet Mignon with Truffle Sauce">
+    <h3>Filet Mignon & Truffle</h3>
+    <p>A tender cut of beef served with a luxurious truffle-infused sauce, complemented by roasted carrots and mashed potatoes.</p>
+  </div>
+  <div class="w3-quarter">
+    <img src="img/Clafoutis1.jpg" alt="Clafoutis aux Cerises">
+    <h3>Clafoutis aux Cerises</h3>
+    <p>A classic French dessert made with fresh cherries baked in a custard-like batter, dusted with powdered sugar.</p>
+  </div>
+  <div class="w3-quarter">
+    <img src="img/Primavera1.jpg" alt="Pasta Primavera with Chianti">
+    <h3>Pasta e Primavera</h3>
+    <p>A colorful pasta dish made with seasonal vegetables, tossed in a light olive oil dressing, and paired with a fine Chianti wine.</p>
+  </div>
+</div>
+
+<!-- Second Photo Grid-->
+<div class="w3-row-padding w3-padding-16 w3-center">
+  <div class="w3-quarter">
+    <img src="img/Gelato.jpg" alt="Gelato al Limone">
+    <h3>Gelato al Limone</h3>
+    <p>A refreshing lemon gelato made with the finest citrus fruits, offering a tangy and sweet Italian experience.</p>
+  </div>
+  <div class="w3-quarter">
+    <img src="img/Salmon.jpg" alt="Saumon à l'Orange">
+    <h3>Saumon à l'Orange</h3>
+    <p>Delicately pan-seared salmon fillet served with a tangy orange sauce.</p>
+  </div>
+  <div class="w3-quarter">
+    <img src="img/Mozzarella1.jpg" alt="Panini con Prosciutto e Mozzarella">
+    <h3>Panini con Prosciutto</h3>
+    <p>Grilled Italian sandwich filled with fresh mozzarella, prosciutto, and a touch of pesto, served warm and crispy.</p>
+  </div>
+  <div class="w3-quarter">
+    <img src="img/Croissant.jpg" alt="Croissant au Beurre">
+    <h3>Croissant au Beurre</h3>
+    <p>A buttery, flaky croissant, perfect for breakfast or as a light snack, with a cup of freshly brewed espresso.</p>
+  </div>
+</div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+ <!-- About Section -->
+<div class="w3-container w3-padding-32 w3-center">  
+  <h3>About Me, A Cook's Passion</h3><br>
+  <img src="img/Chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+  <div class="w3-padding-32">
+    <h4><b>Herrington Sinasutra</b></h4>
+    <h6><i>Living My Childhood's Dream</i></h6>
+    <p>From a young age, I found myself fascinated by the art of cooking. The kitchen became my playground where I experimented with flavors, textures, and techniques. What started as a simple curiosity soon evolved into a deep passion for creating culinary masterpieces. Over time, this fascination grew into a commitment to master the craft, pushing me to pursue a career in the culinary world. Today, I live my childhood dream every time I step into the kitchen, constantly learning, growing, and sharing my love for food with others.</p>
+  </div>
+</div>
+<hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Thank You!</h3>
+      <p>This took way longer than it should, I almost gave up this idea halfway through. Regardless, I do hope you enjoyed the website I created!</p>
+      <p>Powered by Dave Athaya Celio</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">English</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Exam</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Food Blog</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Job</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Website</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Programming</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Coding</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Europe</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Email</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
